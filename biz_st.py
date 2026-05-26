@@ -27,14 +27,14 @@ with st.echo():
 st.caption('캡션(작고 흐린 글씨로 표현됨):st.caption()')
 
 '#### :orange[이미지:st.image()]'
-st.image('./download file/이미지 원본.png',caption='파이썬 로고',width=500)
+st.image('./data/이미지 원본.png',caption='파이썬 로고',width=500)
 
 '#### :orange[오디오:st.audio()]'
-st.audio('./download file/음원.mp3',format='audio/mpeg',loop=True)
+st.audio('./data/음원.mp3',format='audio/mpeg',loop=True)
 
 '#### :orange[동영상:st.video()]'
 # 'rb': 바이너리 모드로 파일 열기
-video_file= open('./download file/영상.mp4','rb')
+video_file= open('./data/영상.mp4','rb')
 video_bytes=video_file.read()
 st.video(video_bytes)
 
